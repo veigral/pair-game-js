@@ -1,0 +1,152 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #090df169;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+
+.start__game {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.start__game__title {
+  margin-bottom: 10px;
+  font-size: 76px;
+}
+
+.start__game__subtitle {
+  margin-bottom: 5px;
+  font-size: 36px;
+}
+
+.start__game__descr {
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+
+.start__game__timedescr {
+  margin-bottom: 15px;
+}
+
+.start__game__form {
+  display: flex;
+  flex-direction: column;
+}
+
+.start__game__input {
+  margin-bottom: 20px;
+  font-size: 18px;
+  text-align: center;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid black;
+}
+
+.start__game__input:focus {
+  outline: none;
+}
+
+.start__game__btn {
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  border: 1px solid #2a2dd8c7;
+  border-radius: 10px;
+  padding: 10px;
+  font-size: 18px;
+  transition: background-color .3s ease-in-out, color .3s ease-in-out;
+}
+
+.start__game__btn:hover {
+  background-color: #2a2dd8c7;
+  color: white;
+}
+
+.game {
+  position: relative;
+  width: 640px;
+  /* height: 640px; */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-wrap: wrap;
+  perspective: 1000px;
+  justify-content: center;
+}
+
+.card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 150px;
+  height: 150px;
+  margin: 5px;
+  position: relative;
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, .3);
+  border-radius: 10px;
+  transform: scale(1);
+  transform-style: preserve-3d;
+  transition: transform .5s;
+  color: transparent;
+  background-color: rgba(30, 6, 245, 0.267);
+  font-size: 48px;
+  transition: color 0.3s ease-in-out;
+}
+
+.card:active {
+  transform: scale(0.97);
+  transition: transform .2s;
+}
+
+.open {
+  color: black;
+  transition: color 0.3s ease-in-out;
+}
+
+.done {
+  background-color: burlywood;
+}
+
+.game__over {
+  position: absolute;
+  left: 15%;
+  font-size: 100px;
+}
+
+.restart__btn {
+  margin-top: 15px;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  border: 1px solid #2a2dd8c7;
+  border-radius: 10px;
+  padding: 10px;
+  font-size: 18px;
+  transition: background-color .3s ease-in-out, color .3s ease-in-out;
+}
+
+.restart__btn:hover {
+  background-color: #2a2dd8c7;
+  color: white;
+}
